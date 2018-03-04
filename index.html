@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Booking</title>
+  </head>
+  <body>
+    <nav class="sticky-top container" id="nav-busqueda-sticky">
+      <form class="form-init-stick">
+        <div class="d-flex justify-content-center">
+          <div class="form-group col-lg-3 mt-4">
+            <input type="email" class="form-control" name="" placeholder="Destino, nombre de alojamiento">
+          </div>
+          <div class="form-group col-lg-3 date-picker mt-4">
+            <div class="d-flex">
+                <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+              <div class="input-append date form_datetime">
+                  <input class="form-control" type="text" value="" placeholder="Fecha de entrada">
+                  <span class="add-on"><i class="icon-th"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group col-lg-3 date-picker mt-4">
+            <div class="d-flex">
+              <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+              <div class="input-append date form_datetime">
+                  <input class="form-control" type="text" value="" placeholder="Fecha de salida">
+                  <span class="add-on"><i class="icon-th"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mt-4">
+            <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+          </div>
+      </form>
+    </div>
+    </nav>
+    <!-- barra de navegacion -->
+    <div class="d-flex" id="nav-inicial">
+      <div class="mr-auto p-2 pt-2" id="logo-nav">
+        <a href="#">
+          <img src="img/22615963add19ac6b6d715a97c8d477e8b95b7ea.png" alt="logo booking">
+        </a>
+      </div>
+      <div class="p-2 pt-2 mt-1" id="recomiendanos">
+        <a href="#">Recomiendanos a tus amigos y gana dinero</a>
+      </div>
+      <div class="p-2 pt-2">
+        <a href="#" class="btn btn-primary" id="registra-alojamiento">Registra tu alojamiento</a>
+      </div>
+      <div class="p-2 pt-2">
+        <a href="#" class="btn btn-primary btn-nav" data-toggle="modal" data-target="#crear-cuenta">Create una cuenta</a>
+      </div>
+      <div class="p-2 pt-2" id="init-sesion">
+        <a href="#" class="btn btn-primary btn-nav" data-toggle="modal" data-target="#iniciar-sesion">Iniciar sesión</a>
+        <a href="#" id="icon-menu-movil"><i class="fas fa-bars"></i></a>
+      </div>
+    </div>
+    <div class="d-flex pb-3" id="nav-sec">
+      <div class="pt-3">
+        <a href="#" class="pb-3 px-2">Alojamiento</a>
+      </div>
+      <div class="pt-3">
+        <a href="#" class="pb-3 px-2">Vuelos</a>
+      </div>
+      <div class="pt-3">
+        <a href="#" class="pb-3 px-2">Trenes</a>
+      </div>
+      <div class="pt-3">
+        <a href="#" class="pb-3 px-2">Alquileres de coches</a>
+      </div>
+      <div class="pt-3">
+        <a href="#" class="pb-3 px-2">Taxis al aeropuerto</a>
+      </div>
+    </div>
+    <!-- barra de navegacion -->
+
+    <!-- menu movil -->
+      <div id="menu-movil">
+        <img src="img/22615963add19ac6b6d715a97c8d477e8b95b7ea.png" class="p-5 mx-auto d-block" alt="logo booking">
+        <a href="#" id="cerrar-nav-movil"><i class="fas fa-times"></i></a>
+        <div id="accordion">
+          <div class="card">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0 text-center">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Collapsible Group Item #1
+                </button>
+              </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Collapsible Group Item #2
+                </button>
+              </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0 text-center">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- menu movil -->
+
+    <!-- modal iniciar sesion -->
+    <div class="modal fade" id="iniciar-sesion" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Iniciar sesión</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="px-5">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Usuario">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" placeholder="Contraseña">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- modal iniciar sesion -->
+
+    <!-- modal crear cuenta -->
+    <div class="modal fade" id="crear-cuenta" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Crear cuenta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" name="" placeholder="Usuario">
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="" placeholder="Correo">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="" placeholder="Contraseña">
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" name="" placeholder="Repetir contraseña">
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-primary">Crear cuenta</button>
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  <!-- modal crear cuenta -->
+
+
+    <!-- formulario sticky -->
+      <div class="container form-init-stick">
+
+      </div>
+  <!-- formulario sticky -->
+
+  <!-- contenido del home -->
+    <section class="container pt-3">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="col-lg-12" id="col-form">
+            <form action="" id="form-search" class="">
+              <legend class="mb-0">Encuentra ofertas para todas las temporadas</legend>
+              <small class="mb-4">Desde casas acogedoras hasta modernos apartamentos</small>
+              <div class="form-group mt-3">
+                <small>Destino, nombre del alojamiento o dirección:</small>
+                <input type="email" class="form-control" name="" placeholder="Ej. Monteria">
+              </div>
+              <div class="row">
+                <div class="form-group col-lg-6 col-sm-6 col-xs-12 date-picker">
+                  <div class="d-flex">
+                      <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                    <div class="input-append date form_datetime">
+                        <input class="form-control" type="text" value="" placeholder="Fecha de entrada">
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group col-lg-6 col-sm-6 col-xs-12 date-picker">
+                  <div class="d-flex">
+                    <div class="input-group-text"><i class="far fa-calendar-alt"></i></div>
+                    <div class="input-append date form_datetime">
+                        <input class="form-control" type="text" value="" placeholder="Fecha de salida">
+                        <span class="add-on"><i class="icon-th"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control" id="">
+                      <option>1 adulto</option>
+                      <option>2 adulto</option>
+                      <option>3 adulto</option>
+                      <option>4 adulto</option>
+                      <option>5 adulto</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control" id="">
+                      <option>Sin niño</option>
+                      <option>1 niño</option>
+                      <option>2 niños</option>
+                      <option>3 niños</option>
+                      <option>4 niños</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <div class="form-group">
+                    <select class="form-control" id="">
+                      <option>1 habitación</option>
+                      <option>2 habitación</option>
+                      <option>3 habitación</option>
+                      <option>4 habitación</option>
+                      <option>5 habitación</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-8">
+                  <div class="form-check p-3">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Viajo por trabajo</label>
+                  </div>
+                </div>
+                <div class="col-lg-4">
+                  <button type="submit" class="btn btn-primary btn-block">Buscar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-12 py-3 px-0">
+            <div class="info mb-5 px-3 pb-3">
+              <smal>Date de alta, gana dinero y gastatelo en lo que quieras</smal>
+              <h5>Da de alta tu alojamiento en Booking.cot.xon</h5>
+              <a href="#" class="btn btn-primary px-5">Más información</a>
+            </div>
+            <div id="suscripcion" class="p-3 mt-5">
+              <div id="suscribe" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">
+                <div class="d-flex">
+                  <img src="img/1f92b.png" class="mr-3" alt="" width="30px" height="30px">
+                  <p class="my-0">Suscríbete para ver ofertas secretas</p>
+                  <i class="fas fa-angle-down ml-auto"></i>
+                </div>
+                <small class="ml-5">¡Suscríbete y verás cómo bajan los precios!</small>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body p-2">
+                      <form class="form-inline" id="form-suscribe">
+                      <div class="form-group mb-2 w-75">
+                        <input type="email" class="form-control w-100" placeholder="Correo">
+                      </div>
+                      <button type="submit" class="btn btn-dark mb-2">Suscribirse</button>
+                    </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="col-lg-12 mb-3" id="img-1" style="background:url('img/img-1.jpg');background-size:cover;">
+            <div class="d-flex flex-column h-100 state">
+              <div class="p-3 mr-auto">
+                <h5>Roma <span class="flag"><img src="img/flag-italy.png" alt=""></span></h5>
+                <small>1.111 - Alojamientos</small>
+              </div>
+
+              <div class="precio ml-auto mt-auto">
+                <div class="lp-postcard-avg-price-badge">
+                  <div class="lp-postcard-avg-price-pricetag">
+                  </div>
+                  <div class="lp-postcard-avg-price-content">
+                  <span class="lp-postcard-avg-price-copy">Precio medio</span><br><span class="lp-postcard-avg-price-value">COP 310.080</span>
+                  </div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-12" id="img-2" style="background:url('img/img-2.jpg');background-size:cover;">
+            <div class="d-flex flex-column h-100 state">
+              <div class="p-3 mr-auto">
+                <h5>Roma <span class="flag"><img src="img/flag-italy.png" alt=""></span></h5>
+                <small>1.111 - Alojamientos</small>
+              </div>
+
+              <div class="precio ml-auto mt-auto">
+                <div class="lp-postcard-avg-price-badge">
+                  <div class="lp-postcard-avg-price-pricetag">
+                  </div>
+                  <div class="lp-postcard-avg-price-content">
+                  <span class="lp-postcard-avg-price-copy">Precio medio</span><br><span class="lp-postcard-avg-price-value">COP 310.080</span>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-5" id="content-secundario">
+      <div class="row">
+        <div class="col-lg-4 col-xs-12 img-s-colums mb-3">
+          <div class="d-flex flex-column h-100 state" style="background:url('img/img-3.jpg');background-size:210%;background-position-x: center;background-position-y:center">
+            <div class="p-3 mr-auto">
+              <h5>Roma <span class="flag"><img src="img/flag-italy.png" alt=""></span></h5>
+              <small>1.111 - Alojamientos</small>
+            </div>
+            <div class="precio ml-auto mt-auto">
+              <div class="lp-postcard-avg-price-badge">
+                <div class="lp-postcard-avg-price-pricetag">
+                </div>
+                <div class="lp-postcard-avg-price-content">
+                <span class="lp-postcard-avg-price-copy">Precio medio</span><br><span class="lp-postcard-avg-price-value">COP 310.080</span>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-12 img-s-colums mb-3">
+          <div class="d-flex flex-column h-100 state" style="background:url('img/img-4.jpg');background-size:210%;background-position-x: center;background-position-y:center">
+            <div class="p-3 mr-auto">
+              <h5>Roma <span class="flag"><img src="img/flag-italy.png" alt=""></span></h5>
+              <small>1.111 - Alojamientos</small>
+            </div>
+            <div class="precio ml-auto mt-auto">
+              <div class="lp-postcard-avg-price-badge">
+                <div class="lp-postcard-avg-price-pricetag">
+                </div>
+                <div class="lp-postcard-avg-price-content">
+                <span class="lp-postcard-avg-price-copy">Precio medio</span><br><span class="lp-postcard-avg-price-value">COP 310.080</span>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-xs-12 img-s-colums mb-3">
+          <div class="d-flex flex-column h-100 state" style="background:url('img/img-5.jpg');background-size:210%;background-position-x: center;background-position-y:center">
+            <div class="p-3 mr-auto">
+              <h5>Roma <span class="flag"><img src="img/flag-italy.png" alt=""></span></h5>
+              <small>1.111 - Alojamientos</small>
+            </div>
+            <div class="precio ml-auto mt-auto">
+              <div class="lp-postcard-avg-price-badge">
+                <div class="lp-postcard-avg-price-pricetag">
+                </div>
+                <div class="lp-postcard-avg-price-content">
+                <span class="lp-postcard-avg-price-copy">Precio medio</span><br><span class="lp-postcard-avg-price-value">COP 310.080</span>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container mt-3">
+      <h4 class="my-4">Más que hoteles... la comodidad de tu hogar en estas casas y apartamentos</h4>
+      <div class="row">
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="img-terce" style="background:url('img/img-1.jpg');background-size:cover;">
+            <div class="d-flex align-items-end flex-column w-100 h-100">
+              <div class="mt-auto p-2 text-light">Desde COP 1.300.000</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="img-terce" style="background:url('img/img-1.jpg');background-size:cover;">
+            <div class="d-flex align-items-end flex-column w-100 h-100">
+              <div class="mt-auto p-2 text-light">Desde COP 1.300.000</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="img-terce" style="background:url('img/img-1.jpg');background-size:cover;">
+            <div class="d-flex align-items-end flex-column w-100 h-100">
+              <div class="mt-auto p-2 text-light">Desde COP 1.300.000</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-sm-6 mb-4">
+          <div class="img-terce" style="background:url('img/img-1.jpg');background-size:cover;">
+            <div class="d-flex align-items-end flex-column w-100 h-100">
+              <div class="mt-auto p-2 text-light">Desde COP 1.300.000</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <!-- contenido del home -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.js" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.min.js" charset="utf-8"></script>
+    <script src="js/bootstrap-datetimepicker.es.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>

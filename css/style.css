@@ -1,0 +1,269 @@
+@font-face {
+    font-family: helvetica-neue;
+    src: url(../fuentes/HelveticaNeue-BoldCond.otf);
+}
+#nav-inicial{
+  background: #004085;
+  color: #fff;
+  padding: 0% 10%;
+}
+#nav-sec{
+  padding: 0% 10.2%;
+  border-bottom: 1px solid #ebebeb;
+}
+#nav-sec a{
+  font-weight: 500;
+}
+#nav-sec a:hover{
+  text-decoration: none;
+  border-bottom: solid #cecece 2px;
+  color: #000;
+}
+#nav-inicial a{
+  font-family: helvetica-neue;
+  color: #fff;
+  font-size: .8em;
+}
+#nav-inicial a:hover{
+  text-decoration: none;
+  color: #cecece;
+}
+#logo-nav a img{
+  width: 160px;
+}
+.btn-nav{
+  background: #fff;
+  color: #000 !important;
+}
+.btn-nav:hover{
+  background: #fff;
+  color: #004085 !important;
+}
+#registra-alojamiento{
+  background: transparent;
+  color: #fff;
+}
+#registra-alojamiento:hover{
+  background: #004c7b;
+  color: #fff !important;
+}
+#icon-menu-movil{
+  font-size: 2em !important;
+  color: #fff !important;
+  display: none;
+}
+#menu-movil{
+  background: #1b1e21fa;
+  position: absolute;
+  top: 0%;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  left: -100%;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+#cerrar-nav-movil{
+  position: absolute;
+  left: 91%;
+  font-size: 2em;
+  color: #fff;
+  top: .3em;
+  z-index: 110;
+}
+#menu-movil .card{
+  background: transparent;
+}
+#menu-movil .card .btn-link{
+  color: #fff;
+}
+.datetimepicker td, .datetimepicker th{
+  width: 40px;
+  height: 30px;
+}
+th.prev{
+  color: red !important;
+}
+.date-picker .d-flex .input-group-text{
+  border-radius: .25rem 0rem 0rem .25rem;
+}
+.date-picker .d-flex .form_datetime{
+  width: 100%;
+}
+.date-picker .d-flex .form_datetime .form-control{
+  border-radius: 0rem .25rem .25rem 0rem;
+}
+#col-form{
+  background: #ffc107;
+  padding: 20px;
+  border-radius: 3px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+#img-1,#img-2{
+  height: 300px;
+  min-height: 300px;
+  border-radius: 3px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-box-shadow: inset 2px 102px 300px 4px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 2px 102px 300px 4px rgba(0,0,0,0.75);
+  box-shadow: inset 2px 102px 300px 4px rgba(0,0,0,0.75);
+}
+.img-s-colums{
+  height: 300px;
+  min-height: 300px;
+}
+.form-init-stick{
+  background: #ffc107;
+}
+#nav-busqueda-sticky{
+  margin-top: -77px;
+  top: -77px;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.img-s-colums .state{
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.img-s-colums .state:hover{
+  background-size: 250% !important
+}
+.datetimepicker{
+  top: 340px !important;
+}
+.img-s-colums .lp-postcard-avg-price-badge{
+  right: 25px;
+}
+.img-terce{
+  height: 200px;
+  min-height: 200px;
+  -webkit-transition: all .5s ease-in-out;
+  -moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+#img-1:hover,#img-2:hover{
+  -webkit-box-shadow: inset 2px 102px 300px -155px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 2px 102px 300px -155px rgba(0,0,0,0.75);
+  box-shadow: inset 2px 102px 300px -155px rgba(0,0,0,0.75);
+}
+#suscripcion{
+  background: #fde29d;
+}
+#suscribe .fa-angle-down{
+  font-size: 2em;
+  cursor: pointer;
+}
+#form-suscribe .form-group input[type="email"]{
+  border-radius: .25rem 0rem 0rem .25rem;
+  border: solid 1px #007bff;
+  border-right: none;
+}
+#form-suscribe button[type="submit"]{
+  border-radius: 0rem .25rem .25rem 0rem;
+  border: solid 1px #007bff;
+}
+#suscripcion .card-body{
+  background: transparent;
+  border: none;
+}
+.state{
+  color: #fff;
+}
+.state h5{
+  text-shadow: 0px 0px 6px #000;
+}
+.lp-postcard-avg-price-badge {
+    height: 40px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-align: right;
+}
+.lp-postcard-avg-price-pricetag {
+    float: left;
+    width: 29px;
+    height: 40px;
+}
+.lp-postcard-avg-price-content {
+    background-color: #07c;
+    color: #fff;
+    padding: 0 10px;
+    margin: 0 0 0 29px;
+    height: 47px;
+    text-align: right;
+    border-radius: 0 3px 3px 0;
+}
+.lp-postcard-avg-price-copy {
+    font-size: .8em;
+    display: inline-block;
+}
+.lp-postcard-avg-price-value {
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+}
+@media only screen and (max-width: 1199px) {
+  #col-form legend.mb-0{
+    font-size: 1.3em;
+  }
+  #form-suscribe .form-group{
+    width: 73% !important;
+    float: left;
+  }
+  #form-suscribe button[type="submit"]{
+    float: left;
+  }
+}
+@media only screen and (max-width: 1170px) {
+  #nav-inicial{
+    padding: 0;
+  }
+  #nav-sec{
+    -webkit-box-pack: center !important;
+    -ms-flex-pack: center !important;
+    justify-content: center !important;
+  }
+}
+@media only screen and (max-width: 819px) {
+  #recomiendanos{
+    display: none;
+  }
+}
+@media only screen and (max-width: 786px) {
+  #nav-sec a{
+    font-size: .7em;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #nav-sec{
+    display: none !important;
+  }
+  #nav-inicial .p-2{
+    display: none;
+  }
+  #logo-nav,#init-sesion{
+    display: block !important;
+  }
+  #init-sesion a.btn-nav{
+    display: none;
+  }
+  #logo-nav a img{
+    padding-top: 1em;
+  }
+  #icon-menu-movil{
+    display: block;
+  }
+}
